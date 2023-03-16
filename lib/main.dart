@@ -1,16 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/SilverBellMainTitle.dart';
+
+import 'Header.dart';
+import 'MainBackground.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(
-      appBar: AppBar(title: const Text( "Hello World")),
-      body: Center(child: Text("Hi Kim"),)
-    ),);
+    return MaterialApp(
+      home: Scaffold(
+        body: Stack(children: [
+          MainBackground(),
+          Column(
+            children: [
+              const SizedBox(
+                height: 30,
+              ),
+              Header(),
+              const SizedBox(
+                height: 20,
+              ),
+              SilverBellMainTitle()
+            ],
+          )
+        ]),
+      ),
+    );
   }
-
 }
