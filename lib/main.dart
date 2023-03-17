@@ -24,7 +24,23 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              SilverBellMainTitle()
+              SilverBellMainTitle(),
+              const SizedBox(
+                height: 70,
+              ),
+              Center(
+                child: Container(
+                  width: 216,
+                  height: 264,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(14),
+                    image: DecorationImage(
+                      image: AssetImage('assets/peopleImages/1.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              )
             ],
           )
         ]),
