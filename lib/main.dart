@@ -3,6 +3,7 @@ import 'package:my_first_flutter/SilverBellMainTitle.dart';
 
 import 'Carousel.dart';
 import 'Header.dart';
+import 'LikeButton.dart';
 import 'MainBackground.dart';
 
 void main() {
@@ -29,7 +30,11 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 70,
               ),
-              Carousel()
+              Carousel(),
+              const SizedBox(
+                height: 20,
+              ),
+              LikeButton()
             ],
           )
         ]),
