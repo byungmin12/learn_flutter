@@ -16,7 +16,7 @@ class PersonCard extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
         image: DecorationImage(
-          image: AssetImage(imageUrl),
+          image: NetworkImage(imageUrl),
           fit: BoxFit.fill,
         ),
       ),
