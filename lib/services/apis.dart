@@ -7,7 +7,7 @@ import '../models/userModel.dart';
 class ApiServices {
   final String baseUrl = 'https://dummyjson.com/';
 
-  Future<List<UserModel>?> getUsers() async {
+  Future<List<UserModel>> getUsers() async {
     List<UserModel> users = [];
     const String query = "users";
     final url = Uri.parse('$baseUrl$query');

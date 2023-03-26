@@ -5,10 +5,8 @@ import 'Carousel.dart';
 import 'Header.dart';
 import 'LikeButton.dart';
 import 'MainBackground.dart';
-import 'services/apis.dart';
 
 void main() {
-  ApiServices().getUsers();
   runApp(MaterialApp(home: MyApp()));
 }
 
